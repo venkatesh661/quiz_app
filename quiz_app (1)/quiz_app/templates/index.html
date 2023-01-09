@@ -1,0 +1,28 @@
+{% extends "layout_reg.html" %}
+{% block body %}
+<div style="background-image: url('https://media.istockphoto.com/id/1290210769/vector/quiz-time-neon-sign-style-text.jpg?s=612x612&w=0&k=20&c=pfeOdmUD4bYS-LZUuC0f1PDOMU2YNhngvzoUuHW20us=');height:550px; width:1100px; background-position: center;background-repeat: no-repeat;background-size: cover;">
+	<h5 style="color: white; padding:50px">
+		Choose a Subject
+    </h5>
+  	<form method="POST" action={{url_for('quiz')}}>
+	{% for sb in subList %}
+		<input type="submit" name="sub" value='{{sb.subject}}' style="height:80px; color: aliceblue; width:150px;border: 1px solid; word-wrap:normal; margin:40px; padding: 5px;margin: 50 px;  background-color: #a23dca;">
+	{% endfor %}
+	</form>
+
+	<div class= "d-flex flex-column justify-content-end box-container">
+		
+		<form method="POST" action={{url_for('delete')}}>
+			<input type="submit"  style="float: right; margin:10px; padding: 10px;border-radius: 10px;float: right; margin:10px; padding: 10px; color: aliceblue; background-color: #3d7aca;" value="Delete Question"/>
+		</form>
+
+		<form method="POST" action={{url_for('edit')}}>
+			<input type="submit" style="float: right; margin:10px; padding: 10px;border-radius: 10px;color: aliceblue; float: right; margin:10px; padding: 10px;  background-color:#3d7aca;" value="Edit Question"/>
+		</form>
+
+		<form method="POST" action={{url_for('add')}}>
+			<input type="submit"  style="float: right; margin:10px; padding: 10px;border-radius: 10px; color: aliceblue;float: right; margin:10px; padding: 10px;   background-color: #3d7aca;" value="Add Question"/>
+		</form>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout_reg.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block body %}
+    <h1>{{txt}}!</h1>
+	<a href="{{url_for('index')}}"><input type="button" value="Go to home page"></a>
+{% endblock %}

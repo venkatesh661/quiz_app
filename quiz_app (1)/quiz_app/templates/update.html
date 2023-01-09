@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action={{url_for('update')}} method = "post" >
+  <div class="container">
+    <h1>Editing a Question</h1>
+    <p>Please do necessary changes and click on update to modify the question.</p>
+    <hr>
+
+    <label for="qid"><b>ID</b></label>
+    <input type="number" placeholder="Enter ID" name="qid" id="qid" value={{quest.qid}} required>
+
+    <br><br>
+
+    <label for="subject"><b>Subject</b></label>
+    <input type="text" placeholder="Enter Subject" name="subject" id="subject" value="{{quest.subject}}" required>
+
+    <label for="question"><b>Question</b></label>
+    <input type="text" placeholder="Enter Question" name="question" id="question" value="{{quest.question}}" required>
+
+    <label for="option1"><b>Option1</b></label>
+    <input type="text" placeholder="Enter Option1" name="option1" id="option1" value="{{quest.option1}}" required>
+
+    <label for="option2"><b>Option2</b></label>
+    <input type="text" placeholder="Enter Option2" name="option2" id="option2" value="{{quest.option2}}" required>
+
+    <label for="option3"><b>Option3</b></label>
+    <input type="text" placeholder="Enter Option3" name="option3" id="option3" value="{{quest.option3}}" required>
+
+    <label for="option4"><b>Option4</b></label>
+    <input type="text" placeholder="Enter Option4" name="option4" id="option4" value="{{quest.option4}}" required>
+
+    <label for="answer"><b>Answer</b></label>
+    <input type="text" placeholder="Enter Answer" name="answer" id="answer" value="{{quest.answer}}" required>
+
+    <input type="submit" style="float:left; margin:10px; padding: 10px;border-radius: 10px;border-width: 0px; background-color:  #f3ef0a;" value="Update"/>
+  
+    <hr>
+  </div>
+</form>
+
+</body>
+</html>
