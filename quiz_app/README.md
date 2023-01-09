@@ -52,5 +52,5 @@ Deployment
 ----------------
 If you want to deploy this application in our local system we need to follow this below steps 
 
-1. We need to install Mysql server, python and required modules
-2.Then need to pull the code and execute the sample sql file to create database and table.
+1. We need to install Mysql server, python and required modules.
+2. Then need to pull the code and execute the sample sql file to create database and table.
