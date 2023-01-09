@@ -1,5 +1,5 @@
 
-# sample Quiz app 
+# Sample Quiz app 
  This  is a Quiz	web site, show random 10 quetion one by one and show result at end.	Ability to add/edit/delete questions	login functionality and stroring scores of users in quiz.
   ![Home Page](https://user-images.githubusercontent.com/120723992/211252662-06db8201-ff8d-4c02-9b57-cd412ce3ceda.jpeg)
  	 	Ability to create a quiz from added questions, in such a way that at one time one question is returned. When users clicks next, next question is returned. Condition question should not be repeated in same quiz.
