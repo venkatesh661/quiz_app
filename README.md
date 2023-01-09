@@ -5,9 +5,16 @@
     
 
 
-![QuizPage](https://user-images.githubusercontent.com/120723992/211252481-d82eba26-c22d-4eca-818a-e97a3aa89ba0.jpeg)
+![Quiz Page](https://user-images.githubusercontent.com/120723992/211255349-29a620e5-419c-446d-bd5a-4d3ca0bef27e.jpeg)
+
+
+![Adding Question](https://user-images.githubusercontent.com/120723992/211255148-bc5c1507-049a-41ef-9e95-d77d90cff836.jpeg)
+
+![Deleteing](https://user-images.githubusercontent.com/120723992/211255191-c086f85d-47df-4fc3-b78e-1dd015572fde.jpeg)
+
 
 ## Installation
+
 
 For this project we need to install several python  modules like  Flask ,Sqlalchemy & mysql server
 
