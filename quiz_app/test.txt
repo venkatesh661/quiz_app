@@ -1,0 +1,2 @@
+This file is a text file and used to write some text code.
+The main purpose of the file is used to write the code 
