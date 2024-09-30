@@ -148,6 +148,7 @@ def logout():
     return render_template("result.html",txt=txt) 
 
 # This is a comment line.we can use comments 
+## Below is the driver function.
 
 # main driver function
 if __name__ == '__main__':
