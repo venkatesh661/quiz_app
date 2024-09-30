@@ -149,7 +149,6 @@ def logout():
 
 # This is a comment line.we can use comments 
 # Below is the line for main function.
-# Below is the code for the main driver function.
 
 
 # main driver function sd our first branch
