@@ -147,6 +147,8 @@ def logout():
     txt=txt+'You have '+ str(count)+ ' correct questions out of '+ str(int(len(ans)/2))+ ' questions ' # set the result statement
     return render_template("result.html",txt=txt) 
 
+# This is a comment line.we can use comments 
+
 # main driver function
 if __name__ == '__main__':
 	app.run()
